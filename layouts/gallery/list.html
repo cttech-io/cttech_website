@@ -1,0 +1,14 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+<div class="gallery-grid">
+    {{ range .Resources.Match "images/*" }}
+    <div class="gallery-item">
+        <a href="{{ .RelPermalink }}" target="_blank">
+            {{ $scaled := .Fill "400x400" }}
+            <img src="{{ $scaled.RelPermalink }}" alt="{{ .Name }}">
+        </a>
+    </div>
+    {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,31 @@
+baseURL = 'https://cttech.io/'
+defaultContentLanguage = 'en'
+title = 'cttech.io'
+
+[languages]
+  [languages.en]
+    locale = 'en-us'
+    label = 'English'
+    weight = 1
+
+[menu]
+  [[menu.main]]
+    name = 'Blog'
+    url = '/blog/'
+    weight = 10
+  [[menu.main]]
+    name = 'Gallery'
+    url = '/gallery/'
+    weight = 20
+  [[menu.main]]
+    name = 'Support'
+    url = '/support/'
+    weight = 30
+  [[menu.main]]
+    name = 'Privacy'
+    url = '/privacy-policy/'
+    weight = 40
+
+[params]
+  description = 'Personal blog, photography gallery, and app support for cttech.io'
+  footer = '© 2026 cttech.io'

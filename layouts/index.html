@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="intro">
+    <h1>Welcome to cttech.io</h1>
+    <p>Personal blog, photography gallery, and app support.</p>
+</section>
+
+<section class="recent-posts">
+    <h2>Recent Blog Posts</h2>
+    <ul>
+        {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
+        <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <time>{{ .Date.Format "Jan 2, 2006" }}</time>
+        </li>
+        {{ end }}
+    </ul>
+</section>
+{{ end }}
