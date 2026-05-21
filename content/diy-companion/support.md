@@ -14,4 +14,4 @@ If you have any questions, feedback, or need assistance with the app, please rea
 **[hello@cttech.io](mailto:hello@cttech.io)**
 
 ## Legal
-For information on how we handle your data, please see our [Privacy Policy](../privacy-policy/).
+For information on how we handle your data, please see our [Privacy Policy](/diy-companion/privacy-policy/).
