@@ -6,9 +6,8 @@ draft: false
 
 # Support & Contact
 
-If you have any questions or need support for my apps, please reach out!
+If you have any questions or need support for my apps, please reach out! I aim to respond to all inquiries within 48 hours.
 
-- **Email:** support@cttech.io
-- **Twitter:** [@cttech](https://twitter.com/cttech)
 
-I aim to respond to all inquiries within 24-48 hours.
+**Email:** support@cttech.io
+

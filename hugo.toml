@@ -31,5 +31,16 @@ title = 'cttech.io'
     weight = 40
 
 [params]
-  description = 'Personal blog, photography gallery, and app support for cttech.io'
+  description = 'DevOps, Homelab, Photography, and Indie App Development by cttech.io'
   footer = '© 2026 cttech.io'
+  github = 'https://github.com/cttech-io/'
+  author = 'Charlie'
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.5
+  filename = 'sitemap.xml'

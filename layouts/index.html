@@ -1,18 +1,44 @@
 {{ define "main" }}
-<section class="intro">
-    <h1>Welcome to cttech.io</h1>
-    <p>Personal blog, photography gallery, and app support.</p>
+<section class="hero">
+    <h1>Bits, bytes, hardware, and everything in between</h1>
+    <p>Hi, I'm Charlie. I work in DevOps for a large cloud provider and have worked in tech for nearly 10 years. </p>
+        
+    <p>I also like to experiment with my homelab, try out new tech, play video games and dabble in photography. This is my
+    space on the Internet to share what I'm working on.</p>
+    <div class="cta-group">
+        <a href="/diy-companion/" class="button primary">
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+            My App: DIY Companion
+        </a>
+        <a href="{{ .Site.Params.github }}" class="button secondary">
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            See my code
+        </a>
+    </div>
 </section>
 
-<section class="recent-posts">
-    <h2>Recent Blog Posts</h2>
-    <ul>
-        {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
-        <li>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            <time>{{ .Date.Format "Jan 2, 2006" }}</time>
-        </li>
-        {{ end }}
-    </ul>
-</section>
+<div class="home-grid">
+    <section class="recent-posts">
+        <h2>Latest from the Blog</h2>
+        <ul>
+            {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
+            <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                <time>{{ .Date.Format "Jan 2, 2006" }}</time>
+                <p class="summary">{{ .Summary | truncate 150 }}</p>
+            </li>
+            {{ end }}
+        </ul>
+        <a href="/blog/" class="view-all">View all posts &rarr;</a>
+    </section>
+
+    <section class="in-the-works">
+        <h2>In the Works</h2>
+        <div class="teaser-card">
+            <h3>Homelab Tour</h3>
+            <p>A deep dive into what I'm running in my Homelab, how its put together and my plans</p>
+            <span class="status">Drafting</span>
+        </div>
+    </section>
+</div>
 {{ end }}

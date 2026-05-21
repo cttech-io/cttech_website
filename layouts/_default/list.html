@@ -4,7 +4,10 @@
     {{ range .Pages }}
     <li>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        <time>{{ .Date.Format "Jan 2, 2006" }}</time>
+        <time style="display: inline-flex; align-items: center;">
+        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        {{ .Date.Format "Jan 2, 2006" }}
+    </time>
     </li>
     {{ end }}
 </ul>

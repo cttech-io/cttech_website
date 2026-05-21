@@ -189,17 +189,28 @@ time {
     filter: grayscale(0%);
 }
 
-/* DIY Companion Specific */
-.diy-companion-header {
-    text-align: center;
-    padding-bottom: 4rem;
+/* Homepage Hero */
+.hero {
+    padding: 6rem 0;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 4rem;
 }
 
-.diy-companion-links {
+.hero h1 {
+    font-size: 4rem;
+    margin-top: 0;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    color: var(--text-dim);
+    max-width: 700px;
+    margin-bottom: 3rem;
+}
+
+.cta-group {
     display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin: 2rem 0;
+    gap: 1.5rem;
 }
 
 .button {
@@ -210,9 +221,86 @@ time {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button:hover {
     background: var(--accent-color);
     color: var(--bg-color);
+}
+
+.button.primary {
+    background: var(--accent-color);
+    color: var(--bg-color);
+}
+
+.button.primary:hover {
+    background: transparent;
+    color: var(--accent-color);
+}
+
+/* Home Grid */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+}
+
+@media (max-width: 768px) {
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero h1 { font-size: 2.5rem; }
+}
+
+.recent-posts .summary {
+    color: var(--text-dim);
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.view-all {
+    display: inline-block;
+    margin-top: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Teaser Cards */
+.teaser-card {
+    background: #111;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    margin-bottom: 2rem;
+    transition: var(--transition);
+}
+
+@media (prefers-color-scheme: light) {
+    .teaser-card { background: #f9f9f9; }
+}
+
+.teaser-card h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.teaser-card p {
+    font-size: 0.95rem;
+    color: var(--text-dim);
+    margin-bottom: 1.5rem;
+}
+
+.status {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.3rem 0.6rem;
+    background: var(--border-color);
+    color: var(--text-dim);
+    border-radius: 2px;
 }
