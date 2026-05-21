@@ -15,8 +15,10 @@ DIY Companion is designed to help you track, plan, and execute your home improve
 - Progress photos and notes
 
 ## Download & Source
-- [**Download on the App Store**](https://apps.apple.com/app/diy-companion) *(Replace with real link)*
-- [**View Source on GitHub**](https://github.com/cttech-io/diy-companion) *(Replace with real link)*
+<div class="diy-companion-links">
+    <a href="https://apps.apple.com/app/diy-companion" class="button">App Store</a>
+    <a href="https://github.com/cttech-io/diy-companion" class="button">GitHub Source</a>
+</div>
 
 ---
 
