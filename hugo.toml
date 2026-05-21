@@ -14,6 +14,10 @@ title = 'cttech.io'
     url = '/blog/'
     weight = 10
   [[menu.main]]
+    name = 'DIY Companion'
+    url = '/diy-companion/'
+    weight = 15
+  [[menu.main]]
     name = 'Gallery'
     url = '/gallery/'
     weight = 20
