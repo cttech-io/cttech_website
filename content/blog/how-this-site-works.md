@@ -1,6 +1,6 @@
 ---
 title: "Moving from Site Builders to Hugo"
-date: 2026-06-07T17:00:00Z
+date: 2026-06-07T08:25:00Z
 draft: false
 categories: ["Tech"]
 tags: ["Hugo", "DevOps", "GitHub Actions", "Web Dev"]
