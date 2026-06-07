@@ -1,5 +1,8 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
+{{ .Content }}
+
+{{ if .Pages }}
 <ul>
     {{ range .Pages }}
     <li>
@@ -11,4 +14,5 @@
     </li>
     {{ end }}
 </ul>
+{{ end }}
 {{ end }}
