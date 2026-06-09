@@ -66,6 +66,14 @@ nav {
     }
 }
 
+.nav-top {
+    display: contents;
+}
+
+.nav-toggle {
+    display: none;
+}
+
 nav .site-logo a {
     font-family: var(--font-sans); /* Using Sans for the logo-feel */
     font-weight: 800;
@@ -345,6 +353,83 @@ time {
         grid-template-columns: 1fr;
     }
     .hero h1 { font-size: 2.5rem; }
+
+    /* Mobile nav */
+    header {
+        padding: 0;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 0;
+        align-items: stretch;
+    }
+
+    .nav-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.25rem 1.5rem;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-toggle {
+        display: flex;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--text-color);
+        padding: 0.25rem;
+    }
+
+    .nav-toggle .icon-close { display: none; }
+    .nav-open .nav-toggle .icon-menu { display: none; }
+    .nav-open .nav-toggle .icon-close { display: block; }
+
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        padding: 0.5rem 0 1rem;
+        margin: 0;
+    }
+
+    .nav-open #nav-links {
+        display: flex;
+    }
+
+    #nav-links > li {
+        margin: 0;
+    }
+
+    #nav-links > li > a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /* Mobile dropdown — accordion style */
+    .nav-dropdown .dropdown-menu {
+        position: static;
+        border: none;
+        border-left: 2px solid var(--border-color);
+        margin: 0 1.5rem 0.5rem 2.5rem;
+        padding: 0.25rem 0;
+        display: none;
+    }
+
+    .nav-dropdown.dropdown-open .dropdown-menu {
+        display: block;
+    }
+
+    .nav-dropdown.dropdown-open .dropdown-chevron {
+        transform: rotate(180deg);
+    }
+
+    .dropdown-menu li a {
+        padding: 0.5rem 1rem;
+    }
 }
 
 .recent-posts .summary {
