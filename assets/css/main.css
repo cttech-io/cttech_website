@@ -155,6 +155,34 @@ footer {
     margin-bottom: 0.25rem;
 }
 
+/* Full blog index list */
+.post-list {
+    margin-top: 3rem;
+}
+
+.post-entry {
+    display: block;
+    padding: 2.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.post-entry:first-child {
+    border-top: 1px solid var(--border-color);
+}
+
+.post-entry a {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+}
+
+.post-entry a:hover {
+    color: var(--link-hover);
+}
+
 time {
     color: var(--text-dim);
     font-size: 0.85rem;
@@ -303,4 +331,31 @@ time {
     background: var(--border-color);
     color: var(--text-dim);
     border-radius: 2px;
+}
+
+/* Reading progress bar */
+#reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: var(--accent-color);
+    z-index: 1000;
+    transition: width 0.1s linear;
+}
+
+/* Post meta (date + reading time) */
+.post-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.reading-time {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }

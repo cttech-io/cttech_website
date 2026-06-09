@@ -4,8 +4,6 @@ date: 2026-05-21T08:31:00+01:00
 draft: false
 ---
 
-# Privacy Policy
-
 **DIY Companion** — developed by cttech.io
 Last updated: May 2026
 

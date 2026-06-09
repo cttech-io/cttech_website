@@ -5,9 +5,7 @@ draft: false
 description: "The ultimate tool for your DIY projects."
 ---
 
-# DIY Companion
-
-DIY Companion is designed to help you track, plan, and execute your home improvement projects with ease.
+DIY Companion is an ad-free iOS app packed with handy utilities — a spirit level, wall scanner, torch, ruler, and noise meter. No subscriptions, no ads, no data collection. Just a one-time purchase.
 
 ## Key Features
 <ul style="list-style: none; padding: 0;">
@@ -31,4 +29,5 @@ I believe in building in the open. You can follow the development, report issues
 ---
 
 ## Legal
+- [Support](support/)
 - [Privacy Policy](privacy-policy/)

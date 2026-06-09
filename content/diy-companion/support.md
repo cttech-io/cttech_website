@@ -4,8 +4,6 @@ date: 2026-05-21T09:00:00+01:00
 draft: false
 ---
 
-# DIY Companion Support
-
 DIY Companion is the ultimate utility toolset for your home improvement and DIY projects, featuring a noise meter, spirit level, wall scanner, and more.
 
 ## Contact Us

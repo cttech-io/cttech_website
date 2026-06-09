@@ -4,8 +4,6 @@ date: 2026-05-21T08:52:00+01:00
 draft: false
 ---
 
-# Privacy Policy
-
 Your privacy is important to me. This policy outlines how I handle your data across my apps and website.
 
 ## Website
