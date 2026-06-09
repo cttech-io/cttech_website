@@ -9,9 +9,11 @@ DIY Companion is an ad-free iOS app packed with handy utilities — a spirit lev
 
 ## Key Features
 <ul style="list-style: none; padding: 0;">
-    <li><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; color: var(--accent-color);"><polyline points="20 6 9 17 4 12"></polyline></svg>Project tracking and budgeting</li>
-    <li><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; color: var(--accent-color);"><polyline points="20 6 9 17 4 12"></polyline></svg>Material list management</li>
-    <li><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; color: var(--accent-color);"><polyline points="20 6 9 17 4 12"></polyline></svg>Progress photos and notes</li>
+    <li><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; color: var(--accent-color);"><polyline points="20 6 9 17 4 12"></polyline></svg>Spirit Level — get a precise level reading using your device's sensors</li>
+    <li><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; color: var(--accent-color);"><polyline points="20 6 9 17 4 12"></polyline></svg>Wall Scanner — detect studs and hidden objects behind walls</li>
+    <li><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; color: var(--accent-color);"><polyline points="20 6 9 17 4 12"></polyline></svg>Ruler — measure objects and distances using your camera</li>
+    <li><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; color: var(--accent-color);"><polyline points="20 6 9 17 4 12"></polyline></svg>Noise Meter — measure ambient sound levels in real time</li>
+    <li><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; color: var(--accent-color);"><polyline points="20 6 9 17 4 12"></polyline></svg>Torch — a simple, reliable flashlight for working in dark spaces</li>
 </ul>
 
 ## Current Status: Beta Development

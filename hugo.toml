@@ -14,9 +14,14 @@ title = 'cttech.io'
     url = '/blog/'
     weight = 10
   [[menu.main]]
+    name = 'Apps'
+    url = '#'
+    weight = 15
+  [[menu.main]]
     name = 'DIY Companion'
     url = '/diy-companion/'
-    weight = 15
+    weight = 10
+    parent = 'Apps'
   [[menu.main]]
     name = 'Gallery'
     url = '/gallery/'
@@ -35,6 +40,10 @@ title = 'cttech.io'
   footer = '© 2026 cttech.io'
   github = 'https://github.com/cttech-io/'
   author = 'Charlie'
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
 
 [taxonomies]
   category = 'categories'

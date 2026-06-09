@@ -41,6 +41,11 @@
     </script>
     {{ end }}
 
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
     {{ $style := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
     {{ with .OutputFormats.Get "rss" -}}
@@ -50,10 +55,25 @@
 <body>
     <header>
         <nav>
-            <div class="site-logo"><a href="/">{{ .Site.Title }}</a></div>
+            <div class="site-logo">
+                <a href="/">
+                    <img src="/logo.png" alt="{{ .Site.Title }}" class="nav-logo">
+                </a>
+            </div>
             <ul>
                 {{ range .Site.Menus.main }}
+                {{ if .HasChildren }}
+                <li class="nav-dropdown">
+                    <a href="{{ .URL }}">{{ .Name }}<svg class="dropdown-chevron" viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                    <ul class="dropdown-menu">
+                        {{ range .Children }}
+                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                        {{ end }}
+                    </ul>
+                </li>
+                {{ else }}
                 <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
                 {{ end }}
             </ul>
         </nav>

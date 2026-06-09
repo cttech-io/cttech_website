@@ -53,6 +53,19 @@ nav {
     padding: 0 2rem;
 }
 
+.nav-logo {
+    height: 28px;
+    width: auto;
+    display: block;
+    filter: invert(1);
+}
+
+@media (prefers-color-scheme: light) {
+    .nav-logo {
+        filter: none;
+    }
+}
+
 nav .site-logo a {
     font-family: var(--font-sans); /* Using Sans for the logo-feel */
     font-weight: 800;
@@ -89,6 +102,56 @@ nav ul li a {
 
 nav ul li a:hover {
     color: var(--accent-color);
+}
+
+/* Dropdown */
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.dropdown-chevron {
+    transition: transform 0.2s ease;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    right: 0;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    min-width: 160px;
+    padding: 0.5rem 0;
+    list-style: none;
+    margin: 0;
+    z-index: 100;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+
+.nav-dropdown:hover .dropdown-chevron,
+.nav-dropdown:focus-within .dropdown-chevron {
+    transform: rotate(180deg);
 }
 
 main {
@@ -218,6 +281,7 @@ time {
 }
 
 /* Homepage Hero */
+
 .hero {
     padding: 6rem 0;
     border-bottom: 1px solid var(--border-color);
