@@ -508,3 +508,106 @@ time {
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
+
+/* DIY Companion app page */
+.app-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.app-header img {
+    width: 110px;
+    height: 110px;
+    border-radius: 24px;
+    flex-shrink: 0;
+}
+
+.app-header .app-header-text {
+    flex: 1 1 260px;
+}
+
+/* Sits on its own row below the screenshots — the action after the evidence.
+   Apple allows only one App Store badge per layout, so this is the single
+   store CTA on the page. */
+.app-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 0 0 2rem;
+}
+
+.app-badge img {
+    width: 180px;
+    height: auto;
+    display: block;
+}
+
+/* Matched to the App Store badge's exact 180x60 so the pair is proportional.
+   The label has to run small to fit that width — box-sizing keeps the 2px
+   border inside the 180px rather than pushing it to 184px. Not an Apple
+   asset, so no badge restrictions apply, but it stays second: the
+   guidelines want the App Store badge placed first. */
+.gh-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    box-sizing: border-box;
+    width: 180px;
+    height: 60px;
+    padding: 0 0.6rem;
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: var(--transition);
+}
+
+.gh-badge svg {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+}
+
+.gh-badge:hover {
+    border-color: var(--link-hover);
+    color: var(--link-hover);
+}
+
+/* Horizontal strip — screenshots are tall, so a grid wastes the page.
+   Scroll-snaps on narrow screens. Deliberately not .gallery-grid: that
+   applies a grayscale filter, which would drain the colour these rely on. */
+.app-shots {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    margin: 2.5rem 0;
+    padding-bottom: 1rem;
+}
+
+.app-shots img {
+    flex: 0 0 auto;
+    width: 230px;
+    height: auto;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    scroll-snap-align: start;
+}
+
+.app-offer {
+    border-left: 3px solid var(--link-hover);
+    padding: 0.75rem 0 0.75rem 1.25rem;
+    margin: 2rem 0;
+    color: var(--text-color);
+}
