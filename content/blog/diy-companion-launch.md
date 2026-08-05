@@ -11,6 +11,13 @@ Every so often a job around the house needs a tool you don't have to hand. Is th
 
 That's **DIY Companion**: a spirit level, a metal and wall scanner, an inspection torch, a noise meter and a ruler, in one clean app. No sign-in, no clutter, no nonsense.
 
+<div class="app-shots">
+    <img src="/images/diy-companion/01.webp" alt="Spirit level: hang shelves and frames perfectly level" width="230" loading="lazy">
+    <img src="/images/diy-companion/02.webp" alt="Wall scanner: find studs, metal and wiring before you drill" width="230" loading="lazy">
+    <img src="/images/diy-companion/04.webp" alt="Noise meter: check how loud it really is" width="230" loading="lazy">
+    <img src="/images/diy-companion/06.webp" alt="No ads, no tracking, no subscriptions" width="230" loading="lazy">
+</div>
+
 ## Why I built it
 
 This started when I moved into my first house. I had a box of hand-me-down bits and not much else — none of the proper kit you slowly accumulate from trips to the hardware shop, and every job seemed to need something I didn't own yet. Hanging a shelf meant guessing whether it was level. Putting up a TV bracket meant drilling and hoping.
@@ -18,13 +25,6 @@ This started when I moved into my first house. I had a box of hand-me-down bits 
 So I did the obvious thing and went looking for apps. What I found was pretty dispiriting. Half of them wanted a monthly subscription for a spirit level — a spirit level, charged by the month, forever. The other half were free but so buried in adverts that you'd tap a full-screen video before you could read a measurement, and then again when you switched tools.
 
 None of it felt proportionate to the job. These are small, simple tools that your phone's sensors can already do perfectly well. I wanted the version that just opens and works, that I pay for once and then never think about again. It didn't seem to exist, so I built it.
-
-<div class="app-shots">
-    <img src="/images/diy-companion/01.webp" alt="Spirit level: hang shelves and frames perfectly level" width="230" loading="lazy">
-    <img src="/images/diy-companion/02.webp" alt="Wall scanner: find studs, metal and wiring before you drill" width="230" loading="lazy">
-    <img src="/images/diy-companion/04.webp" alt="Noise meter: check how loud it really is" width="230" loading="lazy">
-    <img src="/images/diy-companion/06.webp" alt="No ads, no tracking, no subscriptions" width="230" loading="lazy">
-</div>
 
 ## What's inside
 
@@ -45,6 +45,16 @@ Here's the part I care about most. DIY Companion is a **one-time purchase**. You
 That's a deliberate choice. A utility you paid for shouldn't spend its life nagging you or harvesting your data. It's also why the whole thing is about a megabyte and needs no network permission at all.
 
 If you'd rather read the code than take my word for it, [the source is on GitHub](https://github.com/cttech-io/DIYCompanion).
+
+## Written entirely in Swift
+
+The whole app is Swift and SwiftUI, with no third-party dependencies whatsoever. That's not purism for its own sake — it's the reason for most of what I like about how it turned out.
+
+Being native means talking to the hardware directly. The spirit level reads the accelerometer through Core Motion, the wall scanner reads the magnetometer, and the noise meter uses the system audio stack. There's no bridge or runtime in between, so readings arrive with no perceptible lag and the haptics fire at the exact moment you hit level rather than a beat later. On a tool you're holding against a wall, that difference is the whole experience.
+
+It also keeps the thing genuinely small. The download is about a megabyte, which is roughly the size of one photo. Apps like this routinely run into tens or hundreds of megabytes, and most of that weight is frameworks and SDKs rather than app.
+
+And it's the honest answer to the privacy question. There are no analytics SDKs in DIY Companion because there are no SDKs at all — nothing was ever added that could phone home, so there's nothing to disable or opt out of. Fewer moving parts also means fewer things to break when iOS updates, which matters when it's one person maintaining it.
 
 ## Launch offer
 
