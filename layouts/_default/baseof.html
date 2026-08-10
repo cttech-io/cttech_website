@@ -51,6 +51,11 @@
     {{ with .OutputFormats.Get "rss" -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
+
+    {{ if hugo.IsProduction -}}
+    <!-- Cloudflare Web Analytics -->
+    <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "b136acf42635459aa78840808253f8c7"}'></script>
+    {{ end -}}
 </head>
 <body>
     <header>
