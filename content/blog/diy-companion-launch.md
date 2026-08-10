@@ -60,7 +60,7 @@ And it's the honest answer to the privacy question. There are no analytics SDKs 
 
 DIY Companion is normally £3.99, but it's **£1.99 until 6 September** as a launch offer. This is my first app and it has no reviews yet, so the early price is there to make it an easy decision. If it looks useful, now's the moment.
 
-<p class="app-badge"><a href="https://apps.apple.com/gb/app/diy-companion/id6771707298"><img src="/images/appstore-badge.svg" alt="Download on the App Store" width="180" height="60"></a></p>
+<p class="app-badge"><a href="https://apps.apple.com/gb/app/diy-companion/id6771707298?ct=blog-launch"><img src="/images/appstore-badge.svg" alt="Download on the App Store" width="180" height="60"></a></p>
 
 Requires an iPhone running iOS 17 or later.
 
